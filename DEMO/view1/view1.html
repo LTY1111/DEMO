@@ -1,0 +1,38 @@
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<script>
+    function displayDate() {
+        document.getElementById("shijian").innerHTML = Date();
+    }
+</script>
+<div class="items-right-view1">
+    <div class="gengxin">
+        <p>系统</p>
+    </div>
+    <div class="time">
+        <div class="time-pic">
+            <div><img src="./原型图.png" alt=""></div>
+            <div class="time-word">
+                <p class="up">LTY</p>
+                <div class="down-box">
+                    <span class="down">XiaoXinPro 16ACH 2021</span>
+                    <span id="checkTime"></span>
+                </div>
+            </div>
+        </div>
+        <div class="check"><button type="button" onclick="changTime()">显示日期</button></div>
+    </div>
+    <div class="more-choise">
+        <div class="more">
+            <card icon="{{card.icon}}" title="{{card.title}}" describe="{{card.describe}}" jump="{{card.jump}}" ng-repeat="card in list">
+                <!-- <div ng-if="card.drop" class="select"><select name="">
+                        <option value="暂停一周">暂停一周</option>
+                        <option value="暂停一月">暂停一月</option>
+                        <option value="暂停一年">暂停一年</option>
+                    </select>
+                </div> -->
+                <img src="{{card.href}}" alt="">
+            </card>
+        </div>
+
+    </div>
+</div>

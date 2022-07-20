@@ -1,0 +1,75 @@
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<div class="items-right-view1">
+    <div class="gengxin">
+        <div>
+            <div ng-click="onJumpPage('#!/view1')">系统</div>
+            <div>>声音</div>
+        </div>
+    </div>
+    <div class="more-choise">
+        <div class="more">
+            <span class="stitle">输出</span>
+            <card icon="./font/50_xitongxinxi.png" title="选择播放声音的位置" describe="应用可能有自己的设置" jump="" ng-click="toggle()">
+                <!-- 点击下拉隐藏框 -->
+                <span>扬声器</span>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <div ng-hide="myVar3">
+                <card mb="mb-0" icon="" title="扬声器" describe="Realtek(R) Audio" jump="">
+                    <img src="./font/Chevron-Right.png" alt="">
+                </card>
+                <card icon="" mb="mb-0" title="配对新的输出设备" describe="" jump="">
+                    <button class="button">添加设备</button>
+                </card>
+            </div>
+            <card title="音量" describe="" jump="">
+                <slide></slide>
+            </card>
+            <card title="单声道音频" describe="将左声道和右声道合并成一个声道" jump="">
+                <demoswitch ng-model="m.switch0"></demoswitch>
+            </card>
+        </div>
+        <div class="more">
+            <span class="stitle">输入</span>
+            <card icon="./font/50_xitongxinxi.png" title="选择用于讲话或录制的设备" describe="应用可能有自己的设置" jump=""
+                ng-click="toggle2()">
+                <!-- 点击下拉隐藏框 -->
+                <span>麦克风阵列</span>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <div ng-hide="myVar4">
+                <card mb="mb-0" icon="" title="麦克风阵列" describe="Realtek(R) Audio" jump="">
+                    <img src="./font/Chevron-Right.png" alt="">
+                </card>
+                <card icon="" mb="mb-0" title="配对新的输出设备" describe="" jump="">
+                    <button class="button">添加设备</button>
+                </card>
+            </div>
+            <card icon="" title="音量" describe="">
+                <slide></slide>
+            </card>
+        </div>
+        <div class="more">
+            <span class="stitle">高级</span>
+            <card icon="" title="排查常见声音问题" describe="">
+                <span>输出设备</span>
+                <span>输入设备</span>
+            </card>
+            <card icon="./font/50_xitongxinxi.png" title="所有声音设备" describe="开启/关闭设备、排除故障、其它选项">
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <card icon="./font/chanyeyingyongxitong.png" title="音量合成器" describe="应用程序音量混合、应用程序输入和输出设备">
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <card icon="" title="更多声音设置" describe="">
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+        </div>
+        <div class="fankui-help">
+            <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+            <div>
+                <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+            </div>
+        </div>
+    </div>
+</div>

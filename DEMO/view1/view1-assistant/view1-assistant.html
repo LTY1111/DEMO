@@ -1,0 +1,61 @@
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<div class="items-right-view1">
+    <div class="gengxin">
+        <div>
+            <div ng-click="onJumpPage('#!/view1')">系统</div>
+            <div>>专注助手</div>
+        </div>
+    </div>
+    <div class="more-choise">
+        <div class="more">
+            <card icon="./font/50_xitongxinxi.png" title="专注助手"
+                describe="要保持专注，请选择希望查看和收听的通知，其他通知将直接转到通知中心，可在那里随之查看。更多关于专注助手的信息" jump="" ng-click="toggle()">
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <div ng-hide="myVar5">
+                <div class="assistantDrop" >
+                    <div class="assDrop">
+                        <input type="radio" name="assistant" id="close" checked>
+                        <label for="close" class="assSpan">
+                            <span class="assTitle">关</span>
+                            <span class="assDescribe">获取来自应用和联系人的所有通知</span>
+                        </label>
+                    </div>
+                    <div class="assDrop">
+                        <input type="radio" name="assistant" id="firstNotice" checked>
+                        <label for="firstNotice" class="assSpan">
+                            <span class="assTitle">仅优先通知</span>
+                            <span class="assDescribe">仅查看优先级列表中选定的通知</span>
+                            <span class="assDescribe"><a href="#">自定义优先级列表</a></span>
+                        </label>
+                    </div>
+                    <div class="assDrop">
+                        <input type="radio" name="assistant" id="watch" checked>
+                        <label for="watch" class="assSpan">
+                            <span class="assTitle">仅限闹钟</span>
+                            <span class="assDescribe">隐藏除闹钟外的所有通知</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="assistantCard">
+                    <input type="checkbox" id="abstract">
+                    <label for="abstract"><span class="assDrop">显示专注助手时所错过内容的摘要</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <span class="stitle">自动规则</span>
+            <card icon="{{card.icon}}" title="{{card.title}}" describe="{{card.describe}}" jump="{{card.jump}}"
+                ng-repeat="card in assistantList">
+                <demoswitch ng-model="m.switch0" ng-model="m.switch0"></demoswitch>
+                <img ng-if="card.drop" src="{{card.href}}" alt="">
+            </card>
+        </div>
+        <div class="fankui-help">
+            <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+            <div>
+                <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+            </div>
+        </div>
+    </div>
+</div>

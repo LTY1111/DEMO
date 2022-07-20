@@ -1,0 +1,129 @@
+<div class="items-right-view1">
+    <!-- 1.第一行更新 -->
+    <div class="gengxin">
+        <div>
+            <div ng-click="onJumpPage('#!/view7/view7-time')">时间和语言</div>
+            <div>>语言和区域</div>
+        </div>
+    </div>
+    <!-- 第二部分 -->
+    <div class="more-choise">
+        <div class="more">
+            <!-- 语言 -->
+            <span class="stitle">语言</span>
+            <div class="card">
+                <div class="img"><img src="./font/stop.png" alt=""></div>
+                <div class="span">
+                    <span class="title">Windows显示语言</span>
+                    <span class="describe">"设置"和"文件资源管理等"Windows功能将使用此语言显示</span>
+                </div>
+                <div class="left">
+                    <selectdrop class="select" drop="drop[0]" url="http://127.0.0.1:5500/API/language.json"></selectdrop>
+                    <!-- <select ng-model="selected" ng-options="x.value as x.key for x in getlanguageList"></select> -->
+                    <!-- <selectdrop source="API/country.json"></selectdrop> -->
+                </div>
+            </div>
+            <!-- 首选语言 -->
+            <div class="card">
+                <div class="span">
+                    <span class="title">首选语言</span>
+                    <span class="describe">应用将以此列表中支持的第一种语言显示</span>
+                </div>
+                <div class="left">
+                    <button class="button">添加语言</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="./font/stop.png" alt=""></div>
+                <div class="span">
+                    <span class="title">中文(简体，中国)</span>
+                    <span class="describe">语言包，文本到语音转换，语音识别，手写，基本输入法</span>
+                </div>
+                <div class="left">
+                    <div>
+                        <span>...</span>
+                    </div>
+                    <!-- <div class="language-choise">
+                    <ul>
+                        <li><img src="./font/wenhao.png" alt=""><span>语言选项</span></li>
+                        <li><img src="./font/wenhao.png" alt=""><span>上移</span></li>
+                        <li><img src="./font/wenhao.png" alt=""><span>下移</span></li>
+                        <li><img src="./font/wenhao.png" alt=""><span>删除</span></li>
+
+                    </ul>
+                </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- 国家或地区 -->
+        <div class="more">
+            <div class="card">
+                <div class="img"><img src="./font/choise.png" alt=""></div>
+                <div class="span">
+                    <span class="title">国家或地区</span>
+                    <span class="describe">Windows和应用可能会根据你所在的国家或地区向你提供本地内容</span>
+                </div>
+                <div class="left">
+                    <selectdrop class="select" drop="drop[0]" url="http://127.0.0.1:5500/API/country.json"></selectdrop>
+                    <!-- <select ng-model="selected" ng-options="x.value as x.key for x in getcountryList"></select> -->
+                </div>
+            </div>
+            <!-- 区域格式 -->
+            <div class="card">
+                <div class="img"><img src="./font/choise.png" alt=""></div>
+                <div class="span">
+                    <span class="title">区域格式</span>
+                    <span class="describe">Windows和某些应用根据区域格式设置日期和时间格式</span>
+                </div>
+                <div class="left">
+                    <selectdrop class="select" drop="drop[0]" get-list="getList" ng-click="regionChange()" url="http://127.0.0.1:5500/API/region.json"></selectdrop>
+                    <!-- {{getList}} -->
+                    <div ng-click="toggle()">
+                        <img src="./font/Chevron-Right.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下拉区域 -->
+            <div ng-hide="myVar2" class="buttondropdown">
+                <ul class="infobox">
+                    <li class="info" ng-repeat="x in info">
+                        <span class="info-key">{{x.key}}<span>:</span></span>
+                        <span class="info-value">{{x.value.length==1?x.value[0]:x.value}}</span>
+                    </li>
+                </ul>
+                <div class="button">
+                    <button class="medium">更改格式</button>
+                </div>
+            </div>
+        </div>
+        <!-- 相关设置-->
+        <div class="more">
+            <span class="stitle">相关设置</span>
+            <!-- 输入 -->
+            <div class="card" ng-click="onJumpPage('#!/view7/view7-input')">
+                <div class="img"><img src="./font/choise.png" alt=""></div>
+                <div class="span">
+                    <span class="title">输入</span>
+                    <span class="describe">拼写检查、自动更正、文本建议</span>
+                </div>
+                <div class="left"><img src="./font/Chevron-Right.png" alt=""></div>
+            </div>
+            <!-- 输入 -->
+            <div class="card">
+                <div class="img"><img src="./font/choise.png" alt=""></div>
+                <div class="span">
+                    <span class="title">管理语言设置</span>
+                </div>
+                <div class="left"><img src="./font/Chevron-Right.png" alt=""></div>
+            </div>
+        </div>
+        <div class="fankui-help">
+            <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+            <div>
+                <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+            </div>
+        </div>
+    </div>
+</div>

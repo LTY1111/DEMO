@@ -1,0 +1,80 @@
+<link rel="stylesheet" href=".  .css">
+<script src="./1.js"></script>
+<link rel="stylesheet" href="../download/font_suy8x0lo4sq/demo.css">
+<link rel="stylesheet" href="../download/font_suy8x0lo4sq/iconfont.css">
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<script>
+    function displayDate() {
+        document.getElementById("shijian").innerHTML = Date();
+    }
+</script>
+<div class="items-right-view1">
+    <!-- 1.第一行更新 -->
+    <div class="gengxin">
+        <p>Windows更新</p>
+    </div>
+
+    <!-- 第二部分时间 -->
+    <div class="time">
+        <div class="time-pic">
+            <div><img src="./font/gengxin.png" alt=""></div>
+            <div class="time-word">
+                <p class="up">你使用的是最新版本</p>
+                <div class="down-box">
+                    <p class="down">上次检查时间：今天，</p>
+                    <p class="down-time" id="shijian">19:41</p>
+                </div>
+            </div>
+        </div>
+        <div class="check"><button type="button" onclick="displayDate()">显示日期</button></div>
+    </div>
+
+    <!-- 第三部分 -->
+    <p class="more">更多选项</p>
+    <div class="more-choise">
+        <!-- 暂停更新 -->
+        <div class="stop">
+            <img src="./font/stop.png" alt="">
+            <span>暂停更新</span>
+            <div class="select"><select name="">
+                    <option value="暂停一周">暂停一周</option>
+                    <option value="暂停一月">暂停一月</option>
+                    <option value="暂停一年">暂停一年</option>
+                </select></div>
+            <img class="left" src="./font/Chevron-Right.png" alt="">
+        </div>
+
+        <!-- 历史记录 -->
+        <div class="card">
+            <div class="img"><img src="./font/card.png" alt=""></div>
+            <div class="span"><span>更新历史记录</span></div>
+            <div class="left"><img src="./font/Chevron-Right.png" alt=""></div>
+        </div>
+        <!-- 高级选项 -->
+        <div class="card">
+            <div class="img"><img src="./font/choise.png" alt=""></div>
+            <div class="span">
+                <span class="title">高级选项</span>
+                <span class="describe">传递优化、可选更新、活跃时间以及其他更新设置</span>
+            </div>
+            <div class="left"><img src="./font/Chevron-Right.png" alt=""></div>
+        </div>
+        <!-- 体验计划 -->
+        <div class="card">
+            <div class="img"><img src="./font/plan.png" alt=""></div>
+            <div class="span">
+                <span>Windows预览体验计划</span>
+                <span class="describe">获取Windows的预览版本,以分享有关新功能和更新的反馈</span>
+            </div>
+            <div class="left"><img src="./font/Chevron-Right.png" alt=""></div>
+        </div>
+    </div>
+    <!-- 第四部分 -->
+    <div class="fankui-help">
+        <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+        <div>
+            <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+        </div>
+
+    </div>
+</div>

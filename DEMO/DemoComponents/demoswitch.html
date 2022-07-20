@@ -1,0 +1,8 @@
+<div  ng-model="modelValue" class="demoswitch-wrapper">
+    <!-- open就显示开这个字 -->
+    <div style="margin-right: 1em;">{{$ctrl.innerModel?"开":"关"}}</div>
+    <!-- ng-class获取类名改变css样式 -->
+    <div ng-click="toggle($event)" ng-class="$ctrl.innerModel?'demoswitch opened':'demoswitch'">
+        <div ng-class="$ctrl.innerModel?'opened':''"></div>
+    </div>
+</div>  

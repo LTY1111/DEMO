@@ -1,0 +1,15 @@
+<div class="card" ng-class="$ctrl.mb" ng-click="onJumpPage($ctrl.jump)">
+    <div class="img" ng-if="$ctrl.icon"><img src="{{$ctrl.icon}}" alt=""></div>
+    <div class="span">
+        <span class="title">{{$ctrl.title}}</span>
+        <span class="describe">{{$ctrl.describe}}</span>
+    </div>
+    <div class="left" ng-transclude>
+    </div>
+</div>
+
+
+<!-- <card icon="" title="" describe="" ng-click="">
+    <selectdrop></selectdrop>
+    <img src="" alt="">
+</card> -->

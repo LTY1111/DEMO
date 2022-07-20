@@ -1,0 +1,26 @@
+.more > .divdropdown {
+  width: 95%;
+  height: 320px;
+  margin-bottom: 25px;
+  background-color: white;
+}
+.more > .divdropdown form {
+  display: flex;
+  flex-direction: column;
+}
+.more > .divdropdown label {
+  display: flex;
+  background-color: #fff;
+}
+.more > .divdropdown label:hover {
+  background-color: #a9a7a7;
+}
+.more > .divdropdown input {
+  height: 80px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.more > .divdropdown span {
+  line-height: 80px;
+  margin-left: 20px;
+}
