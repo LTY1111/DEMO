@@ -4,13 +4,13 @@ angular
     templateUrl: "DemoComponents/demoswitch.html",
     transclude: true,
     bindings: {
-        closed: "=?",
-        opend:"="
+      closed: "=?",
+      opend: "=",
     },
     require: {
       model: "ngModel",
     },
-      controller: function ($scope) {
+    controller: function ($scope) {
       // console.log(this);
       this.innerModel = false;
       this.$onInit = () => {

@@ -14,11 +14,7 @@ angular
   ])
 
   .controller("View7Language", function ($scope ) {
-    // $scope.getlanguageList = [];
-    // $scope.getcountryList = [];
-    // $scope.getregionList = [];
     $scope.drop = ["2"];
-    // $scope.region = "1";
     $scope.getList=[];
     $scope.info = [
       // { key: "区域格式", value: $scope.drop },
