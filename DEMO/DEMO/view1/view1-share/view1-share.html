@@ -1,0 +1,25 @@
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<div class="items-right-view1">
+    <div class="gengxin">
+        <div>
+            <div ng-click="onJumpPage('#!/view1')">系统&nbsp;</div>
+            <div> > 就近共享</div>
+        </div>
+    </div>
+    <div class="more-choise">
+        <div class="more">
+
+            <card icon="{{card.icon}}" title="{{card.title}}" describe="{{card.describe}}" ng-repeat="card in shareList">
+                <button ng-if="card.drop2" class="sharebutton">更改</button>
+                <a href="#" ng-if="card.drop3" class="share">重命名</a>
+                <img ng-if="card.drop4" src="{{card.href}}" alt="">
+            </card>
+        </div>
+        <div class="fankui-help">
+            <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+            <div>
+                <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+            </div>
+        </div>
+    </div>
+</div>

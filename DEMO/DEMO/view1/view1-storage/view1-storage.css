@@ -1,0 +1,92 @@
+.Windows-SSD {
+  width: 95%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.Windows-SSDspan {
+  font-size: 45px;
+}
+.Windows-SSD .SSDItem {
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #ccc;
+}
+.Windows-SSD .SSDItem .SSDItem1 {
+  width: 62%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0887e2;
+  transform-origin: left;
+  animation: storage 1s linear;
+}
+.Windows-SSD .SSDWord {
+  display: flex;
+  justify-content: space-between;
+}
+.Windows-SSD .SSDWord span {
+  font-size: 18px;
+  color: gray;
+}
+.storageBar {
+  width: 92%;
+  height: 70px;
+  margin-right: 5px;
+}
+.storageBar .words {
+  display: flex;
+  justify-content: space-between;
+}
+.storageBar .words span:last-child {
+  color: gray;
+  font-size: 18px;
+}
+.storageBar .storageitem {
+  width: 100%;
+  height: 15px;
+  margin-top: 14px;
+  border-radius: 15px;
+  background-color: #ccc;
+}
+.storageBar .storageitem .smallitem1 {
+  width: 26%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0887e2;
+  transform-origin: left;
+  animation: storage 1s linear;
+}
+.storageBar .smallitem2 {
+  width: 6%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0887e2;
+  transform-origin: left;
+  animation: storage 1s linear;
+}
+.storageBar .smallitem3 {
+  width: 3%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0887e2;
+  transform-origin: left;
+  animation: storage 1.5s linear;
+}
+.storageBar .smallitem4 {
+  width: 1%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #0887e2;
+  transform-origin: left;
+  animation: storage 1s linear;
+}
+@keyframes storage {
+  0% {
+    transform: scaleX(0.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

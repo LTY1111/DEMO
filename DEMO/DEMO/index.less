@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.whole {
+  min-width: 1350px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(107, 110, 110, 0.1) 17%,
+    rgba(233, 60, 236, 0.1) 86%
+  );
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  nav {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    .nav-left {
+      display: flex;
+      align-items: center;
+      width: 100px;
+      margin-left: 20px;
+      font-size: 20px;
+      img {
+        float: left;
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        line-height: 30px;
+        margin-left: 10px;
+      }
+    }
+    .nav-right {
+      display: flex;
+      margin-right: 15px;
+      margin-top: 15px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      div {
+        float: left;
+        margin-left: 40px;
+      }
+    }
+  }
+  .items {
+    display: flex;
+    .items-left {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin-top: 30px;
+      border: 1px;
+      .name {
+        display: flex;
+        width: 500px;
+        height: 100px;
+        .pic {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          background-color: rgb(161, 158, 158);
+          margin-left: 40px;
+        }
+        img {
+          width: 60px;
+          height: 60px;
+          margin-top: 20px;
+          margin-left: 27px;
+        }
+        .word {
+          font-size: 20px;
+          margin-left: 30px;
+          margin-top: 20px;
+        }
+      }
+      .research {
+        display: flex;
+        width: 300px;
+        height: 44px;
+        line-height: 28px \9;
+        padding: 0 8px;
+        margin-top: 30px;
+        margin-left: 40px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: -2px 2px 2px #ccc;
+
+        input {
+          width: 380px;
+          height: 40px;
+          font-size: 15px;
+          border: 0 none;
+          outline: none;
+          background-color: #fff;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+      }
+      .bar {
+        width: 90%;
+        margin-top: 50px;
+        margin-left: 40px;
+        .menu {
+          display: flex;
+          flex-direction: column;
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            a {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              color: black;
+
+              span {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  li:hover {
+    background-color: rgba(228, 224, 224, 0.733);
+  }
+  li:visited {
+    background-color: rgb(189, 186, 186);
+  }
+  .items-right {
+    width: 70%;
+    height: 1000px;
+    overflow-y: scroll;
+    margin-top: 30px;
+    margin-left: 8%;
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    .items-right-view1 {
+      .gengxin {
+        margin-bottom: 24px;
+        div {
+          display: flex;
+          font-size: 45px;
+        }
+      }
+      .time {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        height: 100px;
+        margin-bottom: 16px;
+        .time-pic {
+          display: flex;
+          flex-direction: row;
+        }
+        img {
+          height: 100%;
+        }
+        .up {
+          font-size: 22px;
+        }
+        .time-word {
+          width: 250px;
+          height: 70px;
+          margin-left: 10px;
+          .up {
+            margin-top: 25px;
+            margin-bottom: 0;
+          }
+          .down,
+          .down-time {
+            float: left;
+            margin-top: 0;
+          }
+        }
+        .check {
+          width: 120px;
+          height: 40px;
+          font-size: 20px;
+          text-align: center;
+          line-height: 40px;
+          margin-top: 30px;
+          background-color: rgb(23, 172, 241);
+          border-radius: 5px;
+          button {
+            width: 120px;
+            height: 40px;
+            border: none;
+            color: aliceblue;
+            background-color: rgb(23, 172, 241);
+          }
+        }
+      }
+      // 第二部分
+      .more-choise {
+        .more {
+          margin-bottom: 30px;
+          .stitle{
+            display: block;
+            margin-bottom: 15px;
+          }
+          
+        }
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        .card {
+          flex-grow: 1;
+          display: flex;
+          width: 95%;
+          height: 100px;
+          margin-top: 10px ;
+          background-color: white;
+          border-radius: 5px;
+          align-items: center;
+          border:1px solid #ccc;
+          &:hover{
+            background-color: rgb(224, 222, 222);
+          }
+          .img {
+            display: flex;
+            margin-left: 18px;
+          }
+          .span {
+            display: flex;
+            margin-left: 18px;
+            flex-direction: column;
+            vertical-align: middle;
+            .title{
+              margin-bottom: 0;
+              font-size: 20px;
+            }
+            .describe {
+              font-size: 20px;
+              margin-bottom: 0;
+              color: rgb(169, 163, 163);
+            }
+          }
+          .left {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 24px;
+            .button {
+              width: 80px;
+              height: 30px;
+              margin-right: 15px;
+              border-radius: 10px;
+              background-color: rgb(57, 167, 214);
+              border: 1px solid rgb(154, 160, 162);
+            }
+            
+            .select {
+              display: flex;
+              align-items: center;
+              select {
+                height: 40px;
+                width: 180px;
+                margin-right: 15px;
+                font-size: 18px;
+                border-radius: 5px;
+                border:1px solid rgb(154, 160, 162);
+              }
+            }
+          }
+        }
+        .mb-0{
+          margin-top: 0;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border:1px solid #ccc;
+          border-top:0;
+          .span{
+            margin-left: 76px;
+          }
+          // .button{
+          //   background-color: gray;
+          // }
+        }
+        
+      }
+      .fankui-help {
+        list-style: none;
+        padding: 0;
+        img {
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+        }
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+// .disabled{
+//   .disabled
+// }
+.noshow {
+    pointer-events: none !important;
+    opacity: 0.8;
+    color: rgb(169, 163, 163);
+    // color:rgba(4, 140, 140, 0.492);
+}

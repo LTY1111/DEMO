@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="myCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="DemoComponents/DemoComponents.css">
+    <link rel="stylesheet" href="./view1/view1-voice/view1-voice.css">
+    <link rel="stylesheet" href="./view1/view1-assistant/view1-assistant.css">
+    <link rel="stylesheet" href="./view1/view1-notice/view1-notice.css">
+    <link rel="stylesheet" href="./view1/view1-electric/view1-electric.css">
+    <link rel="stylesheet" href="./view1/view1-storage/view1-storage.css">
+    <link rel="stylesheet" href="./view1/view1-share/view1-share.css">
+    <link rel="stylesheet" href="./view7/view7-language/view7-language.css">
+    <link rel="stylesheet" href="./view7/view7-input/view7-input.css">
+    <script src="download/font_suy8x0lo4sq/iconfont.js"></script>
+</head>
+
+<body>
+    <div class="whole">
+        <!-- 导航部分 -->
+        <nav class="nav">
+            <!--导航左边图标 -->
+            <div class="nav-left">
+                <img src="font/left.png" alt="">
+                <p>设置</p>
+            </div>
+            <!-- 导航右边图标 -->
+            <div class="nav-right">
+                <div><img src="font/min.png" alt=""></div>
+                <div><img src="font/24gl-minimize2.png" alt=""></div>
+                <div><img src="font/close.png" alt=""></div>
+            </div>
+        </nav>
+        <!-- 主体items部分 -->
+        <div class="items">
+            <!-- 左边主体部分 -->
+            <div class="items-left">
+                <!-- 头像及姓名 -->
+                <div class="name">
+                    <div class="pic"><img src="font/zhanghu.png" alt=""></div>
+                    <div class="word">
+                        <p>刘天怡<br />mystorp@gmail.com</p>
+                    </div>
+                </div>
+                <!-- 搜索框 -->
+                <div class="research">
+                    <!-- <img src="font/Search-20.png" alt=""> -->
+                    <input type="text" class="search_input" placeholder="查找设置" />
+                    <img src="font/Search-20.png" alt="">
+
+                </div>
+                <!-- 导航栏 -->
+                <div class="bar">
+                    <ul class="menu">
+                        <span></span>
+                        <li>
+                            <a href="#!/view1">
+                                <img src="font/50_xitongxinxi.png" width="40px" alt=""><span>系统</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!/view2">
+                                <img src="font/lanya.png" width="40px" alt=""><span>蓝牙和其他设备</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view3"><img src="font/wangluo.png" width="40px" alt=""><span>网络和Internet</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view4"><img src="font/maobi.png" width="40px" alt=""><span>个性化</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view5"><img src="font/chanyeyingyongxitong.png" width="40px" alt=""><span>应用</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view6"><img src="font/zhanghuffffffpx.png" width="40px" alt=""><span>账户</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view7"><img src="font/shijian.png" width="40px" alt=""><span>时间和语言</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view8"><img src="font/youxitianchong.png" width="40px" alt=""><span>游戏</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view9"><img src="font/xiaoren.png" width="40px" alt=""><span>辅助功能</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view10"><img src="font/yinsibaohu.png" width="40px" alt=""><span>隐私和安全性</span></a>
+                        </li>
+                        <li>
+                            <a href="#!/view11"><img src="font/gengxin.png" width="40px" alt=""><span>Windows更新</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div ng-view class="items-right"></div>
+        </div>
+    </div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="echarts.min.js"></script>
+    <script src="app.js"></script>
+    <script src="view1/view1.js"></script>
+    <script src="view1/view1-screen/view1-screen.js"></script>
+    <script src="view1/view1-voice/view1-voice.js"></script>
+    <script src="view1/view1-notice/view1-notice.js"></script>
+    <script src="view1/view1-assistant/view1-assistant.js"></script>
+    <script src="view1/view1-electric/view1-electric.js"></script>
+    <script src="view1/view1-storage/view1-storage.js"></script>
+    <script src="view1/view1-share/view1-share.js"></script>
+    <script src="view2/view2.js"></script>
+    <script src="view3/view3.js"></script>
+    <script src="view4/view4.js"></script>
+    <script src="view5/view5.js"></script>
+    <script src="view6/view6.js"></script>
+    <script src="view7/view7.js"></script>
+    <script src="view7/view7-time/view7-time.js"></script>
+    <script src="view7/view7-language/view7-language.js"></script>
+    <script src="view7/view7-input/view7-input.js"></script>
+    <script src="view7/view7-perspective/view7-perspective.js"></script>
+    <script src="view8/view8.js"></script>
+    <script src="view9/view9.js"></script>
+    <script src="view10/view10.js"></script>
+    <script src="view11/view11.js"></script>
+    <script src="DemoComponents/DemoComponents.js"></script>
+    <script src="core/version/version.js"></script>
+    <script src="core/version/version-directive.js"></script>
+    <script src="core/version/interpolate-filter.js"></script>
+    <script>
+        function gettime() {
+            document.getElementById('time').innerHTML = '当前时间：' + new Date().toLocaleString()
+        }
+    </script>
+
+</body>
+
+</html>

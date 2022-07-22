@@ -1,0 +1,58 @@
+.demoswitch-wrapper {
+    display: flex;
+    align-items: center;
+}
+.closed{
+    /* 滤镜 */
+    filter: grayscale(1);
+}
+.demoswitch {
+    display: flex;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid rgb(150, 144, 144);
+    border-radius: 15px;
+    background: #fff;
+    align-items: center;
+    padding: 0.3rem;
+    transition: all .25s linear;
+}
+
+.demoswitch div {
+    height: 20px;
+    width: 20px;
+    /* margin-left: 3px; */
+    background: rgb(112, 108, 108);
+    border-radius: 15px;
+    transition: all .30s linear;
+}
+
+.demoswitch.opened {
+    justify-content: end;
+    background: rgb(40, 97, 188);
+    border-color: rgb(40, 97, 188);
+}
+
+.demoswitch div.opened {
+    background-color: #fffffb;
+}
+
+.slide {
+    display: flex;
+    width: 260px;
+    align-items: center;
+}
+.slide span {
+    display: block;
+    width: 5px;
+    margin-right: 20px;
+}
+.slide img {
+    width: 5px;
+    margin-right: 10px;
+}
+
+.slide input {
+    width: 200px;
+}

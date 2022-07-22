@@ -1,0 +1,57 @@
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<div class="items-right-view1">
+    <div class="gengxin">
+        <div>
+            <div ng-click="onJumpPage('#!/view1')">系统</div>
+            <div>>通知</div>
+        </div>
+    </div>
+    <div class="more-choise">
+        <div class="more">
+            <!-- 总开关 -->
+            <card icon="./font/50_xitongxinxi.png" title="通知" describe="获取来自应用和其他发送者的通知" ng-click="toggle()">
+                <demoswitch ng-model="m.switch0"></demoswitch>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <!-- 被控制 -->
+            <div ng-hide="myVar6">
+                <label for="notice" ng-class="!m.switch0?'noshow':''">
+                    <div class="assistantCard" >
+                        <input type="checkbox" id="notice" ng-model="notice">
+                        <span class="assDrop">在锁屏界面上显示通知</span>
+                    </div>
+                </label>
+                <label for="VoIP" ng-class="!m.switch0?'noshow':''">
+                    <div class="assistantCard" >
+                        <input type="checkbox" id="VoIP" ng-model="VoIP">
+                        <span class="assDrop">在锁屏界面上显示提醒和VoIP来电</span>
+                    </div>
+                </label>
+                <label for="voice" ng-class="!m.switch0?'noshow':''">
+                    <div class="assistantCard" >
+                        <input type="checkbox" id="voice" ng-model="voice">
+                        <span class="assDrop">允许通知播放声音</span>
+                    </div>
+                </label>
+            </div>
+            <card icon="./font/bijibendiannao.png" title="专注助手" describe="控制获取或不获取通知的时间"
+                ng-click="onJumpPage('#!/view1/view1-assistant')">
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+        </div>
+        <div class="more">
+            <span>来自应用和其他发送者的通知</span><br />
+            <span class="stitle">排列顺序：最新</span>
+            <card  icon="{{card.icon}}" title="{{card.title}}" describe="{{card.describe}}" jump="{{card.jump}}" ng-repeat="card in list">
+                <demoswitch ng-model="m['switch'+($index+1)]" closed="!m.switch0"></demoswitch>
+                <img src="{{card.href}}" alt="">
+            </card>
+        </div>
+        <div class="fankui-help">
+            <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+            <div>
+                <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+            </div>
+        </div>
+    </div>
+</div>

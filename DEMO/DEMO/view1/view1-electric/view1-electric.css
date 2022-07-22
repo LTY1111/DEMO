@@ -1,0 +1,20 @@
+.nav-electric {
+  display: flex;
+  height: 300px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.nav-electric .nav-topic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+.nav-electric .nav-topic div img {
+  width: 60px;
+  height: 60px;
+  margin-left: 15px;
+}
+.nav-electric .nav-topic span {
+  line-height: 300px;
+}

@@ -1,0 +1,84 @@
+<script src="../download/font_suy8x0lo4sq/iconfont.js"></script>
+<div class="items-right-view1">
+    <div class="gengxin">
+        <div>
+            <div ng-click="onJumpPage('#!/view1')">系统</div>
+            <div>>存储</div>
+        </div>
+        <div class="Windows-SSD">
+            <span>Windows-SSD(C:)-200GB</span>
+            <div class="SSDItem">
+                <div class="SSDItem1"></div>
+            </div>
+            <div class="SSDWord">
+                <span>已使用76.1GB</span>
+                <span>123GB可用</span>
+            </div>
+        </div>
+    </div>
+    <div class="more-choise">
+        <div class="more">
+            <card icon="./font/24gl-minimize2.png" title="" describe="">
+                <div class="storageBar">
+                    <div class="words">
+                        <span>应用和功能</span>
+                        <span>已使用19.8GB/76.1GB</span>
+                    </div>
+                    <div class="storageitem">
+                        <div class="smallitem1"></div>
+                    </div>
+                </div>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <card icon="./font/24gl-minimize2.png" title="" describe="">
+                <div class="storageBar">
+                    <div class="words">
+                        <span>其他</span>
+                        <span>已使用4.40GB/76.1GB</span>
+                    </div>
+                    <div class="storageitem">
+                        <div class="smallitem2"></div>
+                    </div>
+                </div>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <card icon="./font/24gl-minimize2.png" title="" describe="">
+                <div class="storageBar">
+                    <div class="words">
+                        <span>文档</span>
+                        <span>已使用2.51GB/76.1GB</span>
+                    </div>
+                    <div class="storageitem">
+                        <div class="smallitem3"></div>
+                    </div>
+                </div>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+            <card icon="./font/24gl-minimize2.png" title="" describe="">
+                <div class="storageBar">
+                    <div class="words">
+                        <span>临时文件</span>
+                        <span>已使用834MB/76.1GB</span>
+                    </div>
+                    <div class="storageitem">
+                        <div class="smallitem4"></div>
+                    </div>
+                </div>
+                <img src="./font/Chevron-Right.png" alt="">
+            </card>
+        </div>
+        <div class="more">
+            <span class="stitle">存储管理</span>
+            <card icon="{{card.icon}}" title="{{card.title}}" describe="{{card.describe}}" ng-repeat="card in storageFirstList">
+                <demoswitch ng-model="m.switch0" ng-if="card.drop"></demoswitch>
+                <img src="{{card.href}}" alt="">
+            </card>
+        </div>
+        <div class="fankui-help">
+            <div><img src="./font/wenhao.png" alt=""><span>获取帮助</span></div>
+            <div>
+                <img src="./font/fankui.png" alt=""><span>提供反馈</span>
+            </div>
+        </div>
+    </div>
+</div>
